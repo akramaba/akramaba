@@ -1,34 +1,55 @@
-<h2 align="center">👋 About</h2>
-<p align="center"><img width="20px" src="https://emoji.gg/assets/emoji/2112_wave_animated.gif"> Hi! I'm <b>Pupppy44</b>. I'm a boy. <br>I program in <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png" width="15px"> <b>Javascript</b> and <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" width="15px"> <b>C++</b>.<br><br>I've done commissions in <b>Lua</b> for  <b>50+</b> people a while back.<br>My programming commissions are <b>open</b> for all languages.
-<h2 align="center">🔥 Abilities</h2>
-<p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" width="13px"> Game Engines 
-<br>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" width="13px"> Windows Applications
-<br>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" width="13px"> 2D Graphics and UIs
-<br>
-<br>
-<img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png" width="13px"> HTML/CSS/JS
-<br>
-<img src="https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png" width="13px"> Node.JS Applications and Servers
-<br>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" width="13px"> Vue Websites
-<br>
-<br>
-<img src="https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png" width="13px"> PowerPoint Extensions
-<br>
-<img src="https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png" width="13px"> ASP.NET Servers
+<h2>About</h2>
+<p>
+Hi! I'm Akram, and I specialize in the development of bare-metal software where every cycle and byte is manually managed. My work centers on the elimination of abstraction by implementing fundamental subsystems, from memory management to network protocols, directly against the hardware. I maintain control over execution determinism and system performance by building monolithic kernels and 3D engines from the ground up.
 </p>
-<h2 align="center">⭐ Spotlight</h2>
-<div align="center">
-<a href="https://github.com/pupppy44/geo"><img src="https://github-readme-stats.vercel.app/api/pin/?username=pupppy44&repo=geo&theme=chartreuse-dark"></a>
- 
-<a href="https://github.com/pupppy44/mira"><img src="https://github-readme-stats.vercel.app/api/pin/?username=pupppy44&repo=mira&theme=chartreuse-dark"></a>
-<a href="https://github.com/pupppy44/suey"><img src="https://github-readme-stats.vercel.app/api/pin/?username=pupppy44&repo=suey&theme=chartreuse-dark"></a>
-   
-<a href="https://github.com/pupppy44/pascal"><img src="https://github-readme-stats.vercel.app/api/pin/?username=pupppy44&repo=pascal&theme=chartreuse-dark"></a>
-</div>
-<h2 align="center">📱 Contact</h2>
-<p align="center">
-<img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" width="20px"> Discord: <b>pupppy44</label></b>
+
+<h2>Technical Focus</h2>
+
+<p>
+<b>Systems Programming</b><br>
+<ul>
+<li>Implementation of a 64-bit graphical operating system and drivers for NVMe + Intel HDA hardware via MMIO and DMA</li>
+<li>Development of Slab and Arena allocators for O(1) memory access and minimal heap fragmentation</li>
+</ul>
+</p>
+
+<p>
+<b>Performance Optimization</b><br>
+<ul>
+<li>Low-level optimization for x86-64 using SIMD (AVX/SSE) and bitwise operations</li>
+<li>Application of lock-free atomics and cache-line alignment to maximize throughput in concurrent environments</li>
+</ul>
+</p>
+
+<p>
+<b>Networking &amp; Protocols</b><br>
+<ul>
+<li>Engineering custom UDP libraries and stacks with zero-copy I/O and polled drivers</li>
+<li>Bypassing kernel overhead for high-frequency packet processing and packet analysis</li>
+</ul>
+</p>
+
+<p>
+<b>Applied Mathematics</b><br>
+<ul>
+<li>Implementation of linear algebra and computational geometry within rendering pipelines and spatial partitioning systems</li>
+<li>Application of discrete mathematics and reinforcement learning (Q-Learning) for simulation and fault-burst mitigation</li>
+</ul>
+</p>
+
+<h2>Spotlight</h2>
+
+<p>
+<b><a href="https://github.com/akramaba/mira">Mira (Custom x86-64 Monolithic OS)</a></b><br>
+A 64-bit monolithic kernel written from scratch to handle high-frequency fault bursts. The architecture relies on a custom O(1) Slab Allocator to ensure deterministic memory access patterns, alongside asynchronous NVMe drivers and a polled UDP stack designed for zero-copy packet processing.
+</p>
+
+<p>
+<b><a href="https://github.com/akramaba/tori">Tori (Custom 3D Rendering Engine)</a></b><br>
+A high-performance rendering engine architected around 16-byte aligned SIMD mathematics and strict hardware cache-line locality. It features a custom Linear Algebra library, Octree spatial partitioning for O(log N) search complexity, and a skeletal animation system driven by direct matrix hierarchies.
+</p>
+
+<p>
+<b><a href="https://github.com/akramaba/geo">Geo (Low-Latency Multiplayer 2D Engine)</a></b><br>
+A multiplayer engine optimized for unstable networking environments using a custom server-authoritative UDP protocol. The core loop uses C++20 multithreading to decouple network processing from logic, which minimizes frame-time spikes, while entity and scripting logic are handled via Lua coroutines for non-blocking execution.
+</p>
