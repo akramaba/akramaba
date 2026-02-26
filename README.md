@@ -1,6 +1,6 @@
 <h2>About</h2>
 <p>
-Hi! I'm Akram, and I specialize in the development of bare-metal software where every cycle and byte is manually managed. My work centers on ruling out abstraction by implementing fundamental subsystems, from memory management to network protocols, directly against the hardware. I maintain control over execution determinism and system performance by building monolithic kernels and 3D engines from scratch.
+Hi! I'm Akram, and I specialize in developing bare-metal software where every cycle and byte is manually managed. My work rules out abstraction by implementing the fundamentals, from memory management to network protocols, directly against the hardware. I maintain control over execution and system performance by building monolithic kernels and 3D engines from scratch.
 </p>
 
 <h2>Technical Focus</h2>
@@ -39,7 +39,7 @@ Hi! I'm Akram, and I specialize in the development of bare-metal software where 
 
 <p>
 <b><a href="https://github.com/akramaba/mira">Mira (Custom x86-64 Monolithic OS)</a></b><br>
-A 64-bit monolithic kernel written from scratch to handle high-frequency fault bursts. The architecture relies on a custom O(1) Slab Allocator to ensure deterministic memory access patterns, alongside asynchronous NVMe drivers and a polled UDP stack for zero-copy packet processing.
+A 64-bit monolithic kernel from scratch to handle high-frequency fault bursts. The architecture uses a custom O(1) Slab Allocator to ensure deterministic memory access patterns, alongside asynchronous NVMe drivers and a zero-copy, polled UDP stack.
 </p>
 
 <p>
